@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-12">
+          <div class="card">
+            <div class="card-body">
+
+              <form name="calculatorForm" style="background-color: #3a3b3d;">
+                <input type="text" name="result" id="result" class="form-control" placeholder="0" disabled>
+                <div class="row">
+                  <div class="col-8 col-sm-3 col-md-9">
+                    <button type="button" class="btn btn-light btn-block" onclick="clearAnswer()">AC</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="appendAnswer('*')">*</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('7')">7</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('8')">8</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('9')">9</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="appendAnswer('/')">/</button>
+                </div>
+            
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('4')">4</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('5')">5</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('6')">6</button>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="appendAnswer('+')">+</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('1')">1</button>
+                </div>
+                <div class="col-sm-3">
+                  <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('2')">2</button>
+                </div>
+                <div class="col-sm-3">
+                  <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('3')">3</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="appendAnswer('-')">-</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('0')">0</button>
+                </div>
+                <div class="col-sm-3">
+                  <button type="button" class="btn btn-light btn-block" onclick="appendAnswer('.')">.</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary btn-block" onclick="calAnswer()">=</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  </body>
+</html>
+  

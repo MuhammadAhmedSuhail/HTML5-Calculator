@@ -1,0 +1,55 @@
+body
+{
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #3a3b3d;
+    border-color: #3a3b3d;
+  }
+  
+  /* .card-body {
+    padding: 20px;
+  } */
+  
+  .form-control {
+    text-align: right;
+    font-size: 36px;
+    height: 80px;
+    border-radius: 0;
+  }
+  
+  .btn {
+    font-size: 20px;
+    border-radius: 0;
+    padding: 0;
+  }
+  
+  .btn-block {
+    text-align: center;
+    height: 60px;
+    color: white;
+    background-color:#56585e;
+    border-color: #343536;
+    padding: 0;
+  }
+
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .btn-secondary {
+    background-color: #56585e;
+    border-color: #343536;
+  }
+  
